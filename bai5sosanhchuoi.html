@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    let a = prompt(" nhap chuoi a");
+    let b = prompt("nhap chuoi b");
+    if(a.length != b.length){
+        document.write("hai chuoi khac nhau vui long nhap lai");
+    } else {
+        let mang1 = a.split(" ");
+        let mang2 = b.split(" ");
+        console.log(mang1);
+        console.log(mang2);
+        let n = mang1.length;
+        let dem =0;
+        for(let i = 0;i<n;i++){
+            if(mang1[i] == mang2[i]){
+                dem++;
+            }
+        }
+        console.log(dem);
+        if(dem == n){
+            document.write("Hai chuoi giong nhau");
+        }else {
+            document.write("hai chuoi khac nhau");
+        }
+    }
+
+</script>
+</body>
+</html>
